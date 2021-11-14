@@ -1,0 +1,21 @@
+version: '3.8'
+services:
+  api:
+    build:
+      context: ./
+      target: dev
+    volumes:
+      - .:/src
+    command: nodemon ./bin/www
+    ports:
+      - "5000:5000"
+    environment:
+      NODE_ENV: development
+      DEBUG: express-redis:*
+      REDIS_HOST: redis
+  redis:
+    container_name: redis-cache
+    image: redis
+    ports:
+      - "6379:6379"
+      
