@@ -1,7 +1,10 @@
 # INTRODUCTION
-Example express setup with Typescript, Docker and Redis
+Dockerized Express setup with Typescript and Redis
 
 # INSTRUCTIONS:
+Needed Docker installed in machine
+[https://docs.docker.com/desktop/mac/install/](https://docs.docker.com/desktop/mac/install/)
+
 `npm run start:dev`
 
-https://blog.logrocket.com/node-js-docker-improve-dx/
+Node version (14.17.3)
